@@ -27,20 +27,20 @@ extern simulator_settings_t settings;
 static char *selected_backend = NULL;
 
 /* ============================================================
- * SPEED TIMER CALLBACK  (LVGL 9 – CORRECT)
+ * SPEED TIMER CALLBACK (LVGL 9)
  * ============================================================ */
-static void speed_timer_cb(lv_timer_t *timer)
+static void speed_timer_cb(lv_timer_t * timer)
 {
-    lv_obj_t *label = lv_timer_get_user_data(timer);
+    lv_obj_t * label = (lv_obj_t *)lv_timer_get_user_data(timer);
 
     static int speed = 0;
-    static char buf[8];
+    char buf[8];
 
     snprintf(buf, sizeof(buf), "%d", speed);
     lv_label_set_text(label, buf);
 
     speed++;
-    if (speed > 180) speed = 0;
+    if(speed > 180) speed = 0;
 }
 
 /* ============================================================
@@ -101,28 +101,37 @@ int main(int argc, char **argv)
     /* --------------------------------------------------------
      * BACKGROUND
      * -------------------------------------------------------- */
-    lv_obj_t *bg = lv_image_create(lv_screen_active());
+    lv_obj_t * bg = lv_image_create(lv_screen_active());
     lv_image_set_src(bg, &img_bg);
     lv_obj_set_pos(bg, 0, 0);
     lv_obj_move_background(bg);
 
-/* --------------------------------------------------------
- * Speed label (layout test)
- * -------------------------------------------------------- */
-lv_obj_t *speed_label = lv_label_create(lv_screen_active());
-lv_label_set_text(speed_label, "123");
+    /* --------------------------------------------------------
+     * SPEED LABEL
+     * -------------------------------------------------------- */
+    lv_obj_t * speed_label = lv_label_create(lv_screen_active());
+    lv_label_set_text(speed_label, "0");
 
-/* White text */
-lv_obj_set_style_text_color(speed_label, lv_color_make(255, 150, 0), 0);
+    /* Amber color (matches RPM LEDs) */
+    lv_obj_set_style_text_color(
+        speed_label,
+        lv_color_make(255, 150, 0),
+        0
+    );
 
-/* Known-good font */
-lv_obj_set_style_text_font(speed_label, &font_speed_32, 0);
+    /* Custom font */
+    lv_obj_set_style_text_font(speed_label, &font_speed_32, 0);
 
-/* Absolute positioning (TUNE THESE VALUES) */
-lv_obj_set_pos(speed_label, 340, 215);
+    /* Final tuned position */
+    lv_obj_set_pos(speed_label, 340, 215);
 
-/* Ensure it renders above the background */
-lv_obj_move_foreground(speed_label);
+    /* Ensure visibility */
+    lv_obj_move_foreground(speed_label);
+
+    /* --------------------------------------------------------
+     * SPEED UPDATE TIMER (THIS WAS MISSING)
+     * -------------------------------------------------------- */
+    lv_timer_create(speed_timer_cb, 100, speed_label);
 
     /* --------------------------------------------------------
      * HAND CONTROL TO BACKEND LOOP
@@ -131,4 +140,3 @@ lv_obj_move_foreground(speed_label);
 
     return 0;
 }
-
