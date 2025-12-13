@@ -1,0 +1,1026 @@
+{
+    "rpm1.png": {
+        "type": "rpm",
+        "x": 122,
+        "y": 211,
+        "w": 27,
+        "h": 21,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm1.png"
+    },
+    "rpm10.png": {
+        "type": "rpm",
+        "x": 157,
+        "y": 190,
+        "w": 25,
+        "h": 25,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm10.png"
+    },
+    "rpm11.png": {
+        "type": "rpm",
+        "x": 161,
+        "y": 188,
+        "w": 25,
+        "h": 25,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm11.png"
+    },
+    "rpm12.png": {
+        "type": "rpm",
+        "x": 165,
+        "y": 186,
+        "w": 25,
+        "h": 25,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm12.png"
+    },
+    "rpm13.png": {
+        "type": "rpm",
+        "x": 169,
+        "y": 184,
+        "w": 24,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm13.png"
+    },
+    "rpm14.png": {
+        "type": "rpm",
+        "x": 173,
+        "y": 182,
+        "w": 24,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm14.png"
+    },
+    "rpm15.png": {
+        "type": "rpm",
+        "x": 177,
+        "y": 180,
+        "w": 23,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm15.png"
+    },
+    "rpm16.png": {
+        "type": "rpm",
+        "x": 181,
+        "y": 179,
+        "w": 23,
+        "h": 25,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm16.png"
+    },
+    "rpm17.png": {
+        "type": "rpm",
+        "x": 185,
+        "y": 177,
+        "w": 23,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm17.png"
+    },
+    "rpm18.png": {
+        "type": "rpm",
+        "x": 190,
+        "y": 175,
+        "w": 22,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm18.png"
+    },
+    "rpm19.png": {
+        "type": "rpm",
+        "x": 194,
+        "y": 173,
+        "w": 22,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm19.png"
+    },
+    "rpm2.png": {
+        "type": "rpm",
+        "x": 128,
+        "y": 206,
+        "w": 28,
+        "h": 22,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm2.png"
+    },
+    "rpm20.png": {
+        "type": "rpm",
+        "x": 198,
+        "y": 172,
+        "w": 22,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm20.png"
+    },
+    "rpm21.png": {
+        "type": "rpm",
+        "x": 202,
+        "y": 170,
+        "w": 22,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm21.png"
+    },
+    "rpm22.png": {
+        "type": "rpm",
+        "x": 207,
+        "y": 168,
+        "w": 21,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm22.png"
+    },
+    "rpm23.png": {
+        "type": "rpm",
+        "x": 211,
+        "y": 166,
+        "w": 21,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm23.png"
+    },
+    "rpm24.png": {
+        "type": "rpm",
+        "x": 216,
+        "y": 165,
+        "w": 20,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm24.png"
+    },
+    "rpm25.png": {
+        "type": "rpm",
+        "x": 221,
+        "y": 164,
+        "w": 20,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm25.png"
+    },
+    "rpm26.png": {
+        "type": "rpm",
+        "x": 226,
+        "y": 162,
+        "w": 19,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm26.png"
+    },
+    "rpm27.png": {
+        "type": "rpm",
+        "x": 230,
+        "y": 160,
+        "w": 19,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm27.png"
+    },
+    "rpm28.png": {
+        "type": "rpm",
+        "x": 235,
+        "y": 159,
+        "w": 19,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm28.png"
+    },
+    "rpm29.png": {
+        "type": "rpm",
+        "x": 240,
+        "y": 157,
+        "w": 18,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm29.png"
+    },
+    "rpm3.png": {
+        "type": "rpm",
+        "x": 131,
+        "y": 204,
+        "w": 28,
+        "h": 23,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm3.png"
+    },
+    "rpm30.png": {
+        "type": "rpm",
+        "x": 244,
+        "y": 156,
+        "w": 18,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm30.png"
+    },
+    "rpm31.png": {
+        "type": "rpm",
+        "x": 250,
+        "y": 155,
+        "w": 17,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm31.png"
+    },
+    "rpm32.png": {
+        "type": "rpm",
+        "x": 254,
+        "y": 153,
+        "w": 18,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm32.png"
+    },
+    "rpm33.png": {
+        "type": "rpm",
+        "x": 259,
+        "y": 152,
+        "w": 18,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm33.png"
+    },
+    "rpm34.png": {
+        "type": "rpm",
+        "x": 265,
+        "y": 151,
+        "w": 16,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm34.png"
+    },
+    "rpm35.png": {
+        "type": "rpm",
+        "x": 269,
+        "y": 150,
+        "w": 16,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm35.png"
+    },
+    "rpm36.png": {
+        "type": "rpm",
+        "x": 275,
+        "y": 149,
+        "w": 15,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm36.png"
+    },
+    "rpm37.png": {
+        "type": "rpm",
+        "x": 280,
+        "y": 148,
+        "w": 15,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm37.png"
+    },
+    "rpm38.png": {
+        "type": "rpm",
+        "x": 285,
+        "y": 147,
+        "w": 15,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm38.png"
+    },
+    "rpm39.png": {
+        "type": "rpm",
+        "x": 290,
+        "y": 146,
+        "w": 15,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm39.png"
+    },
+    "rpm4.png": {
+        "type": "rpm",
+        "x": 134,
+        "y": 202,
+        "w": 27,
+        "h": 23,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm4.png"
+    },
+    "rpm40.png": {
+        "type": "rpm",
+        "x": 295,
+        "y": 144,
+        "w": 14,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm40.png"
+    },
+    "rpm41.png": {
+        "type": "rpm",
+        "x": 301,
+        "y": 144,
+        "w": 14,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm41.png"
+    },
+    "rpm42.png": {
+        "type": "rpm",
+        "x": 306,
+        "y": 143,
+        "w": 13,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm42.png"
+    },
+    "rpm43.png": {
+        "type": "rpm",
+        "x": 311,
+        "y": 142,
+        "w": 13,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm43.png"
+    },
+    "rpm44.png": {
+        "type": "rpm",
+        "x": 316,
+        "y": 142,
+        "w": 13,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm44.png"
+    },
+    "rpm45.png": {
+        "type": "rpm",
+        "x": 322,
+        "y": 141,
+        "w": 12,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm45.png"
+    },
+    "rpm46.png": {
+        "type": "rpm",
+        "x": 328,
+        "y": 141,
+        "w": 11,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm46.png"
+    },
+    "rpm47.png": {
+        "type": "rpm",
+        "x": 333,
+        "y": 140,
+        "w": 11,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm47.png"
+    },
+    "rpm48.png": {
+        "type": "rpm",
+        "x": 338,
+        "y": 139,
+        "w": 10,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm48.png"
+    },
+    "rpm49.png": {
+        "type": "rpm",
+        "x": 344,
+        "y": 139,
+        "w": 10,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm49.png"
+    },
+    "rpm5.png": {
+        "type": "rpm",
+        "x": 138,
+        "y": 200,
+        "w": 27,
+        "h": 24,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm5.png"
+    },
+    "rpm50.png": {
+        "type": "rpm",
+        "x": 350,
+        "y": 138,
+        "w": 9,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm50.png"
+    },
+    "rpm51.png": {
+        "type": "rpm",
+        "x": 356,
+        "y": 138,
+        "w": 9,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm51.png"
+    },
+    "rpm52.png": {
+        "type": "rpm",
+        "x": 361,
+        "y": 138,
+        "w": 9,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm52.png"
+    },
+    "rpm53.png": {
+        "type": "rpm",
+        "x": 368,
+        "y": 137,
+        "w": 8,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm53.png"
+    },
+    "rpm54.png": {
+        "type": "rpm",
+        "x": 373,
+        "y": 137,
+        "w": 8,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm54.png"
+    },
+    "rpm55.png": {
+        "type": "rpm",
+        "x": 380,
+        "y": 137,
+        "w": 7,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm55.png"
+    },
+    "rpm56.png": {
+        "type": "rpm",
+        "x": 386,
+        "y": 136,
+        "w": 7,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm56.png"
+    },
+    "rpm57.png": {
+        "type": "rpm",
+        "x": 392,
+        "y": 136,
+        "w": 6,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm57.png"
+    },
+    "rpm58.png": {
+        "type": "rpm",
+        "x": 398,
+        "y": 136,
+        "w": 6,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm58.png"
+    },
+    "rpm59.png": {
+        "type": "rpm",
+        "x": 404,
+        "y": 136,
+        "w": 6,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm59.png"
+    },
+    "rpm6.png": {
+        "type": "rpm",
+        "x": 142,
+        "y": 197,
+        "w": 27,
+        "h": 24,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm6.png"
+    },
+    "rpm60.png": {
+        "type": "rpm",
+        "x": 409,
+        "y": 137,
+        "w": 8,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm60.png"
+    },
+    "rpm61.png": {
+        "type": "rpm",
+        "x": 416,
+        "y": 137,
+        "w": 7,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm61.png"
+    },
+    "rpm62.png": {
+        "type": "rpm",
+        "x": 422,
+        "y": 137,
+        "w": 9,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm62.png"
+    },
+    "rpm63.png": {
+        "type": "rpm",
+        "x": 429,
+        "y": 137,
+        "w": 9,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm63.png"
+    },
+    "rpm64.png": {
+        "type": "rpm",
+        "x": 434,
+        "y": 138,
+        "w": 11,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm64.png"
+    },
+    "rpm65.png": {
+        "type": "rpm",
+        "x": 442,
+        "y": 139,
+        "w": 11,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm65.png"
+    },
+    "rpm66.png": {
+        "type": "rpm",
+        "x": 448,
+        "y": 139,
+        "w": 12,
+        "h": 29,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm66.png"
+    },
+    "rpm67.png": {
+        "type": "rpm",
+        "x": 456,
+        "y": 140,
+        "w": 11,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm67.png"
+    },
+    "rpm68.png": {
+        "type": "rpm",
+        "x": 461,
+        "y": 141,
+        "w": 13,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm68.png"
+    },
+    "rpm69.png": {
+        "type": "rpm",
+        "x": 468,
+        "y": 142,
+        "w": 13,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm69.png"
+    },
+    "rpm7.png": {
+        "type": "rpm",
+        "x": 146,
+        "y": 196,
+        "w": 26,
+        "h": 24,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm7.png"
+    },
+    "rpm70.png": {
+        "type": "rpm",
+        "x": 474,
+        "y": 143,
+        "w": 15,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm70.png"
+    },
+    "rpm71.png": {
+        "type": "rpm",
+        "x": 481,
+        "y": 144,
+        "w": 15,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm71.png"
+    },
+    "rpm72.png": {
+        "type": "rpm",
+        "x": 488,
+        "y": 146,
+        "w": 17,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm72.png"
+    },
+    "rpm73.png": {
+        "type": "rpm",
+        "x": 496,
+        "y": 147,
+        "w": 18,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm73.png"
+    },
+    "rpm74.png": {
+        "type": "rpm",
+        "x": 504,
+        "y": 149,
+        "w": 18,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm74.png"
+    },
+    "rpm75.png": {
+        "type": "rpm",
+        "x": 511,
+        "y": 151,
+        "w": 19,
+        "h": 28,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm75.png"
+    },
+    "rpm76.png": {
+        "type": "rpm",
+        "x": 519,
+        "y": 153,
+        "w": 20,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm76.png"
+    },
+    "rpm77.png": {
+        "type": "rpm",
+        "x": 527,
+        "y": 155,
+        "w": 20,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm77.png"
+    },
+    "rpm78.png": {
+        "type": "rpm",
+        "x": 534,
+        "y": 157,
+        "w": 21,
+        "h": 27,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm78.png"
+    },
+    "rpm79.png": {
+        "type": "rpm",
+        "x": 541,
+        "y": 160,
+        "w": 22,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm79.png"
+    },
+    "rpm8.png": {
+        "type": "rpm",
+        "x": 150,
+        "y": 194,
+        "w": 25,
+        "h": 24,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm8.png"
+    },
+    "rpm80.png": {
+        "type": "rpm",
+        "x": 549,
+        "y": 162,
+        "w": 22,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm80.png"
+    },
+    "rpm81.png": {
+        "type": "rpm",
+        "x": 557,
+        "y": 165,
+        "w": 23,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm81.png"
+    },
+    "rpm82.png": {
+        "type": "rpm",
+        "x": 565,
+        "y": 168,
+        "w": 24,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm82.png"
+    },
+    "rpm83.png": {
+        "type": "rpm",
+        "x": 573,
+        "y": 171,
+        "w": 25,
+        "h": 26,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm83.png"
+    },
+    "rpm84.png": {
+        "type": "rpm",
+        "x": 581,
+        "y": 175,
+        "w": 26,
+        "h": 25,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm84.png"
+    },
+    "rpm85.png": {
+        "type": "rpm",
+        "x": 590,
+        "y": 178,
+        "w": 26,
+        "h": 25,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm85.png"
+    },
+    "rpm86.png": {
+        "type": "rpm",
+        "x": 597,
+        "y": 182,
+        "w": 27,
+        "h": 25,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm86.png"
+    },
+    "rpm87.png": {
+        "type": "rpm",
+        "x": 605,
+        "y": 186,
+        "w": 28,
+        "h": 24,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm87.png"
+    },
+    "rpm88.png": {
+        "type": "rpm",
+        "x": 613,
+        "y": 189,
+        "w": 29,
+        "h": 25,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm88.png"
+    },
+    "rpm89.png": {
+        "type": "rpm",
+        "x": 621,
+        "y": 194,
+        "w": 30,
+        "h": 24,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm89.png"
+    },
+    "rpm9.png": {
+        "type": "rpm",
+        "x": 153,
+        "y": 192,
+        "w": 26,
+        "h": 25,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm9.png"
+    },
+    "rpm90.png": {
+        "type": "rpm",
+        "x": 621,
+        "y": 199,
+        "w": 64,
+        "h": 44,
+        "src": "C:\\HondDash\\assets_cropped\\rpm\\rpm90.png"
+    },
+    "temp91.png": {
+        "type": "temp",
+        "x": 107,
+        "y": 259,
+        "w": 5,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\temp\\temp91.png"
+    },
+    "temp92.png": {
+        "type": "temp",
+        "x": 109,
+        "y": 259,
+        "w": 16,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\temp\\temp92.png"
+    },
+    "temp93.png": {
+        "type": "temp",
+        "x": 122,
+        "y": 259,
+        "w": 17,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\temp\\temp93.png"
+    },
+    "temp94.png": {
+        "type": "temp",
+        "x": 136,
+        "y": 259,
+        "w": 16,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\temp\\temp94.png"
+    },
+    "temp95.png": {
+        "type": "temp",
+        "x": 148,
+        "y": 259,
+        "w": 17,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\temp\\temp95.png"
+    },
+    "temp96.png": {
+        "type": "temp",
+        "x": 162,
+        "y": 259,
+        "w": 17,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\temp\\temp96.png"
+    },
+    "temp97.png": {
+        "type": "temp",
+        "x": 176,
+        "y": 259,
+        "w": 17,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\temp\\temp97.png"
+    },
+    "temp98.png": {
+        "type": "temp",
+        "x": 193,
+        "y": 259,
+        "w": 18,
+        "h": 11,
+        "src": "C:\\HondDash\\assets_cropped\\temp\\temp98.png"
+    },
+    "fuel100.png": {
+        "type": "fuel",
+        "x": 609,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel100.png"
+    },
+    "fuel101.png": {
+        "type": "fuel",
+        "x": 613,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel101.png"
+    },
+    "fuel102.png": {
+        "type": "fuel",
+        "x": 617,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel102.png"
+    },
+    "fuel103.png": {
+        "type": "fuel",
+        "x": 622,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel103.png"
+    },
+    "fuel104.png": {
+        "type": "fuel",
+        "x": 627,
+        "y": 260,
+        "w": 6,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel104.png"
+    },
+    "fuel105.png": {
+        "type": "fuel",
+        "x": 631,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel105.png"
+    },
+    "fuel106.png": {
+        "type": "fuel",
+        "x": 635,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel106.png"
+    },
+    "fuel107.png": {
+        "type": "fuel",
+        "x": 640,
+        "y": 260,
+        "w": 6,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel107.png"
+    },
+    "fuel108.png": {
+        "type": "fuel",
+        "x": 644,
+        "y": 260,
+        "w": 6,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel108.png"
+    },
+    "fuel109.png": {
+        "type": "fuel",
+        "x": 648,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel109.png"
+    },
+    "fuel110.png": {
+        "type": "fuel",
+        "x": 653,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel110.png"
+    },
+    "fuel111.png": {
+        "type": "fuel",
+        "x": 657,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel111.png"
+    },
+    "fuel112.png": {
+        "type": "fuel",
+        "x": 661,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel112.png"
+    },
+    "fuel113.png": {
+        "type": "fuel",
+        "x": 666,
+        "y": 260,
+        "w": 6,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel113.png"
+    },
+    "fuel114.png": {
+        "type": "fuel",
+        "x": 670,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel114.png"
+    },
+    "fuel115.png": {
+        "type": "fuel",
+        "x": 674,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel115.png"
+    },
+    "fuel116.png": {
+        "type": "fuel",
+        "x": 679,
+        "y": 260,
+        "w": 6,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel116.png"
+    },
+    "fuel117.png": {
+        "type": "fuel",
+        "x": 683,
+        "y": 260,
+        "w": 7,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel117.png"
+    },
+    "fuel118.png": {
+        "type": "fuel",
+        "x": 696,
+        "y": 261,
+        "w": 4,
+        "h": 9,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel118.png"
+    },
+    "fuel99.png": {
+        "type": "fuel",
+        "x": 602,
+        "y": 260,
+        "w": 5,
+        "h": 10,
+        "src": "C:\\HondDash\\assets_cropped\\fuel\\fuel99.png"
+    },
+    "door_open.png": {
+        "type": "icons",
+        "x": 611,
+        "y": 329,
+        "w": 23,
+        "h": 20,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\door_open.png"
+    },
+    "hi_beam.png": {
+        "type": "icons",
+        "x": 554,
+        "y": 229,
+        "w": 23,
+        "h": 14,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\hi_beam.png"
+    },
+    "immo.png": {
+        "type": "icons",
+        "x": 302,
+        "y": 332,
+        "w": 34,
+        "h": 18,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\immo.png"
+    },
+    "left_turn.png": {
+        "type": "icons",
+        "x": 282,
+        "y": 211,
+        "w": 23,
+        "h": 21,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\left_turn.png"
+    },
+    "low_bat.png": {
+        "type": "icons",
+        "x": 171,
+        "y": 330,
+        "w": 27,
+        "h": 18,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\low_bat.png"
+    },
+    "low_brake_fluid.png": {
+        "type": "icons",
+        "x": 126,
+        "y": 329,
+        "w": 30,
+        "h": 21,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\low_brake_fluid.png"
+    },
+    "low_oil.png": {
+        "type": "icons",
+        "x": 210,
+        "y": 331,
+        "w": 39,
+        "h": 16,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\low_oil.png"
+    },
+    "mil_on.png": {
+        "type": "icons",
+        "x": 257,
+        "y": 329,
+        "w": 40,
+        "h": 24,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\mil_on.png"
+    },
+    "right_turn.png": {
+        "type": "icons",
+        "x": 496,
+        "y": 211,
+        "w": 24,
+        "h": 21,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\right_turn.png"
+    },
+    "trunk_open.png": {
+        "type": "icons",
+        "x": 563,
+        "y": 330,
+        "w": 33,
+        "h": 17,
+        "src": "C:\\HondDash\\assets_cropped\\icons\\trunk_open.png"
+    }
+}

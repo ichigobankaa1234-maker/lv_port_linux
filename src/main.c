@@ -1,160 +1,78 @@
-/*******************************************************************
- *
- * main.c - LVGL simulator for GNU/Linux
- *
- * Based on the original file from the repository
- *
- * @note eventually this file won't contain a main function and will
- * become a library supporting all major operating systems
- *
- * To see how each driver is initialized check the
- * 'src/lib/display_backends' directory
- *
- * - Clean up
- * - Support for multiple backends at once
- *   2025 EDGEMTech Ltd.
- *
- * Author: EDGEMTech Ltd, Erik Tagirov (erik.tagirov@edgemtech.ch)
- *
- ******************************************************************/
-#include <unistd.h>
-#include <pthread.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <unistd.h>     // chdir
+#include <limits.h>     // PATH_MAX
 
 #include "lvgl/lvgl.h"
-#include "lvgl/demos/lv_demos.h"
 
+/* Linux simulator backends */
 #include "src/lib/driver_backends.h"
-#include "src/lib/simulator_util.h"
 #include "src/lib/simulator_settings.h"
 
-/* Internal functions */
-static void configure_simulator(int argc, char **argv);
-static void print_lvgl_version(void);
-static void print_usage(void);
-
-/* contains the name of the selected backend if user
- * has specified one on the command line */
-static char *selected_backend;
-
-/* Global simulator settings, defined in lv_linux_backend.c */
 extern simulator_settings_t settings;
 
+/* ============================================================
+ * RPM POSITION TABLE
+ * ============================================================ */
+typedef struct {
+    int x;
+    int y;
+} rpm_pos_t;
 
-/**
- * @brief Print LVGL version
- */
-static void print_lvgl_version(void)
+/* Generated from your metadata (rpm1 → rpm90) */
+static const rpm_pos_t rpm_positions[90] = {
+    {122,211},{128,206},{131,204},{134,202},{138,200},{142,197},{146,196},{150,194},{153,192},
+    {157,190},{161,188},{165,186},{169,184},{173,182},{177,180},{181,179},{185,177},{190,175},
+    {194,173},{198,172},{202,170},{207,168},{211,166},{216,165},{221,164},{226,162},{230,160},
+    {235,159},{240,157},{244,156},{250,155},{254,153},{259,152},{265,151},{269,150},{275,149},
+    {280,148},{285,147},{290,146},{295,144},{301,144},{306,143},{311,142},{316,142},{322,141},
+    {328,141},{333,140},{338,139},{344,139},{350,138},{356,138},{361,138},{368,137},{373,137},
+    {380,137},{386,136},{392,136},{398,136},{404,136},{409,137},{416,137},{422,137},{429,137},
+    {434,138},{442,139},{448,139},{456,140},{461,141},{468,142},{474,143},{481,144},{488,146},
+    {496,147},{504,149},{511,151},{519,153},{527,155},{534,157},{541,160},{549,162},{557,165},
+    {565,168},{573,171},{581,175},{590,178},{597,182},{605,186},{613,189},{621,194},{621,199}
+};
+
+int main(void)
 {
-    fprintf(stdout, "%d.%d.%d-%s\n",
-            LVGL_VERSION_MAJOR,
-            LVGL_VERSION_MINOR,
-            LVGL_VERSION_PATCH,
-            LVGL_VERSION_INFO);
-}
+    /* ------------------------------------------------------------
+     * FORCE WORKING DIRECTORY (THIS FIXES EVERYTHING)
+     * ------------------------------------------------------------ */
+    chdir("/home/honda/lv_port_linux");
 
-/**
- * @brief Print usage information
- */
-static void print_usage(void)
-{
-    fprintf(stdout, "\nlvglsim [-V] [-B] [-b backend_name] [-W window_width] [-H window_height]\n\n");
-    fprintf(stdout, "-V print LVGL version\n");
-    fprintf(stdout, "-B list supported backends\n");
-}
+    /* Window size */
+    settings.window_width  = 800;
+    settings.window_height = 480;
 
-/**
- * @brief Configure simulator
- * @description process arguments recieved by the program to select
- * appropriate options
- * @param argc the count of arguments in argv
- * @param argv The arguments
- */
-static void configure_simulator(int argc, char **argv)
-{
-    int opt = 0;
-
-    selected_backend = NULL;
-    driver_backends_register();
-
-    const char *env_w = getenv("LV_SIM_WINDOW_WIDTH");
-    const char *env_h = getenv("LV_SIM_WINDOW_HEIGHT");
-    /* Default values */
-    settings.window_width = atoi(env_w ? env_w : "800");
-    settings.window_height = atoi(env_h ? env_h : "480");
-
-    /* Parse the command-line options. */
-    while ((opt = getopt (argc, argv, "b:fmW:H:BVh")) != -1) {
-        switch (opt) {
-        case 'h':
-            print_usage();
-            exit(EXIT_SUCCESS);
-            break;
-        case 'V':
-            print_lvgl_version();
-            exit(EXIT_SUCCESS);
-            break;
-        case 'B':
-            driver_backends_print_supported();
-            exit(EXIT_SUCCESS);
-            break;
-        case 'b':
-            if (driver_backends_is_supported(optarg) == 0) {
-                die("error no such backend: %s\n", optarg);
-            }
-            selected_backend = strdup(optarg);
-            break;
-        case 'W':
-            settings.window_width = atoi(optarg);
-            break;
-        case 'H':
-            settings.window_height = atoi(optarg);
-            break;
-        case ':':
-            print_usage();
-            die("Option -%c requires an argument.\n", optopt);
-            break;
-        case '?':
-            print_usage();
-            die("Unknown option -%c.\n", optopt);
-        }
-    }
-}
-
-/**
- * @brief entry point
- * @description start a demo
- * @param argc the count of arguments in argv
- * @param argv The arguments
- */
-int main(int argc, char **argv)
-{
-
-    configure_simulator(argc, argv);
-
-    /* Initialize LVGL. */
+    /* Init LVGL */
     lv_init();
 
-    /* Initialize the configured backend */
-    if (driver_backends_init_backend(selected_backend) == -1) {
-        die("Failed to initialize display backend");
+    /* Init backend */
+    driver_backends_register();
+    if(driver_backends_init_backend(NULL) == -1) {
+        printf("Backend init failed\n");
+        return 1;
     }
 
-    /* Enable for EVDEV support */
-#if LV_USE_EVDEV
-    if (driver_backends_init_backend("EVDEV") == -1) {
-        die("Failed to initialize evdev");
+    /* ------------------------------------------------------------
+     * BACKGROUND
+     * ------------------------------------------------------------ */
+    lv_obj_t *bg = lv_image_create(lv_screen_active());
+    lv_image_set_src(bg, "assets/bg.png");
+    lv_obj_set_pos(bg, 0, 0);
+
+    /* ------------------------------------------------------------
+     * RPM LAYERS (ALL VISIBLE — PROOF OF LIFE)
+     * ------------------------------------------------------------ */
+    for(int i = 0; i < 90; i++) {
+        char path[64];
+        snprintf(path, sizeof(path), "assets/rpm/rpm%d.png", i + 1);
+
+        lv_obj_t *img = lv_image_create(lv_screen_active());
+        lv_image_set_src(img, path);
+        lv_obj_set_pos(img, rpm_positions[i].x, rpm_positions[i].y);
     }
-#endif
 
-    /*Create a Demo*/
-    lv_demo_widgets();
-    lv_demo_widgets_start_slideshow();
-
-    /* Enter the run loop of the selected backend */
+    /* Run */
     driver_backends_run_loop();
-
     return 0;
 }
