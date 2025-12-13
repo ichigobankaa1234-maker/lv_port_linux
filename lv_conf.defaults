@@ -1,156 +1,173 @@
-# =========================
+# =========================================================
 # CORE COLOR / DISPLAY
-# =========================
+# =========================================================
 
-LV_COLOR_DEPTH          16
-LV_COLOR_16_SWAP        0
+LV_COLOR_DEPTH              16
+LV_COLOR_16_SWAP            0
 
-# =========================
-# DRAW ENGINE (MINIMAL)
-# =========================
+# =========================================================
+# DRAW ENGINE (SOFTWARE ONLY)
+# =========================================================
 
-LV_USE_DRAW_SW          1
-LV_USE_DRAW_SW_ASM      LV_DRAW_SW_ASM_NONE
+LV_USE_DRAW_SW              1
+LV_USE_DRAW_SW_ASM          LV_DRAW_SW_ASM_NONE
 
-LV_USE_DRAW_OPENGLES    0
-LV_USE_DRAW_G2D         0
-LV_USE_DRAW_SDL         0
+LV_USE_DRAW_OPENGLES        0
+LV_USE_DRAW_G2D             0
+LV_USE_DRAW_SDL             0
 
-# =========================
-# DISPLAY BACKEND (PI5)
-# =========================
+# =========================================================
+# DISPLAY BACKEND (RASPBERRY PI 5 – FBDEV)
+# =========================================================
 
-LV_USE_LINUX_FBDEV      1
-LV_LINUX_FBDEV_RENDER_MODE   LV_DISPLAY_RENDER_MODE_DIRECT
-LV_LINUX_FBDEV_BUFFER_COUNT  2
+LV_USE_LINUX_FBDEV          1
+LV_LINUX_FBDEV_RENDER_MODE  LV_DISPLAY_RENDER_MODE_DIRECT
+LV_LINUX_FBDEV_BUFFER_COUNT 2
 
-LV_USE_LINUX_DRM        0
-LV_USE_SDL              0
-LV_USE_WAYLAND          0
-LV_USE_GLFW             0
+LV_USE_LINUX_DRM            0
+LV_USE_SDL                  0
+LV_USE_WAYLAND              0
+LV_USE_GLFW                 0
 
-# =========================
+# =========================================================
 # INPUT
-# =========================
+# =========================================================
 
-LV_USE_EVDEV            1
-LV_USE_LIBINPUT         0
+LV_USE_EVDEV                1
+LV_USE_LIBINPUT             0
 
-# =========================
-# OBJECTS (ONLY WHAT WE NEED)
-# =========================
+# =========================================================
+# CORE OBJECT SYSTEM (REQUIRED)
+# =========================================================
 
-LV_USE_OBJ              1
-LV_USE_LABEL            1
-LV_USE_IMG              1
+LV_USE_OBJ                  1
+LV_USE_GROUP                1
 
-LV_USE_BTN              0
-LV_USE_BAR              0
-LV_USE_SLIDER           0
-LV_USE_ARC              1
-LV_USE_CHART            0
-LV_USE_TABLE            0
-LV_USE_TEXTAREA         1
-LV_USE_DROPDOWN         1
-LV_USE_ROLLER           0
-LV_USE_SWITCH           0
-LV_USE_CHECKBOX         0
-LV_USE_CANVAS           0
-LV_USE_SPAN             0
-LV_USE_GROUP            1
+# =========================================================
+# BASIC UI ELEMENTS (WHAT WE ACTUALLY USE)
+# =========================================================
 
-# =========================
-# FONTS (SAFE BASELINE)
-# =========================
+LV_USE_LABEL                1
+LV_USE_IMAGE                1
 
-LV_USE_FONT_PLACEHOLDER 1
+# =========================================================
+# INTERNAL DEPENDENCY WIDGETS (MUST STAY ENABLED)
+# =========================================================
+# These are required by LVGL internals even if unused
 
-LV_FONT_MONTSERRAT_16   1
-LV_FONT_MONTSERRAT_20   1
-LV_FONT_MONTSERRAT_24   1
-LV_FONT_MONTSERRAT_28   1
-LV_FONT_MONTSERRAT_32   1
+LV_USE_ARC                  1
+LV_USE_TEXTAREA             1
+LV_USE_DROPDOWN             1
 
-LV_USE_TINY_TTF         1
-LV_USE_IMGFONT          1
+# =========================================================
+# DISABLED HEAVY / UNUSED WIDGETS
+# =========================================================
 
-LV_FONT_FMT_TXT_LARGE   1
+LV_USE_BTN                  0
+LV_USE_BAR                  0
+LV_USE_SLIDER               0
+LV_USE_CHART                0
+LV_USE_TABLE                0
+LV_USE_ROLLER               0
+LV_USE_SWITCH               0
+LV_USE_CHECKBOX             0
+LV_USE_CANVAS               0
+LV_USE_SPAN                 0
+LV_USE_SPINNER              0
+LV_USE_SPINBOX              0
+LV_USE_CALENDAR             0
+LV_USE_METER                0
 
-# =========================
+# =========================================================
+# FONTS (SAFE BASELINE – WILL REPLACE LATER)
+# =========================================================
+
+LV_USE_FONT_PLACEHOLDER     1
+
+LV_FONT_MONTSERRAT_16       1
+LV_FONT_MONTSERRAT_20       1
+LV_FONT_MONTSERRAT_24       1
+LV_FONT_MONTSERRAT_28       1
+LV_FONT_MONTSERRAT_32       1
+
+LV_USE_TINY_TTF             1
+LV_USE_IMGFONT              1
+LV_FONT_FMT_TXT_LARGE       1
+
+# =========================================================
 # IMAGE DECODERS
-# =========================
+# =========================================================
 
-LV_USE_BMP              1
-LV_USE_LODEPNG          1
-LV_USE_TJPGD            0
+LV_USE_BMP                  1
+LV_USE_LODEPNG              1
+LV_USE_TJPGD                0
 
-LV_BIN_DECODER_RAM_LOAD 1
+LV_BIN_DECODER_RAM_LOAD     1
 
-# =========================
-# FILESYSTEM (ODOMETER)
-# =========================
+# =========================================================
+# FILESYSTEM (ODOMETER STORAGE)
+# =========================================================
 
-LV_USE_FS_STDIO         1
-LV_FS_STDIO_LETTER      'A'
+LV_USE_FS_STDIO             1
+LV_FS_STDIO_LETTER          'A'
 LV_FS_DEFAULT_DRIVER_LETTER 'A'
 
-# =========================
+# =========================================================
 # MEMORY / PERFORMANCE
-# =========================
+# =========================================================
 
-LV_MEM_SIZE             (512U * 1024U)
-LV_MEM_CUSTOM           0
+LV_MEM_SIZE                 (512U * 1024U)
+LV_MEM_CUSTOM               0
 
 LV_DRAW_LAYER_SIMPLE_BUF_SIZE (128 * 1024)
+LV_OBJ_STYLE_CACHE          1
 
-LV_OBJ_STYLE_CACHE      1
+# =========================================================
+# TIMERS
+# =========================================================
 
-# =========================
-# TIMING
-# =========================
+LV_USE_TIMER                1
 
-LV_USE_TIMER            1
+# =========================================================
+# LOGGING (OFF – STABLE)
+# =========================================================
 
-# =========================
-# LOGGING (OFF)
-# =========================
+LV_USE_LOG                  0
 
-LV_USE_LOG              0
+# =========================================================
+# DEMOS / EXAMPLES (FULLY OFF)
+# =========================================================
 
-# =========================
-# DEMOS / EXAMPLES (OFF)
-# =========================
+LV_BUILD_EXAMPLES           0
+LV_BUILD_DEMOS              0
 
-LV_BUILD_EXAMPLES       0
-LV_BUILD_DEMOS          0
+LV_USE_DEMO_WIDGETS         0
+LV_USE_DEMO_BENCHMARK       0
+LV_USE_DEMO_RENDER          0
+LV_USE_DEMO_STRESS          0
+LV_USE_DEMO_MUSIC           0
 
-LV_USE_DEMO_WIDGETS     0
-LV_USE_DEMO_BENCHMARK   0
-LV_USE_DEMO_RENDER      0
-LV_USE_DEMO_STRESS      0
-LV_USE_DEMO_MUSIC       0
-
-# =========================
+# =========================================================
 # VECTOR / ADVANCED (OFF)
-# =========================
+# =========================================================
 
-LV_USE_FLOAT            0
-LV_USE_MATRIX           0
-LV_USE_VECTOR_GRAPHIC   0
-LV_USE_THORVG_INTERNAL  0
-LV_USE_LOTTIE           0
+LV_USE_FLOAT                0
+LV_USE_MATRIX               0
+LV_USE_VECTOR_GRAPHIC       0
+LV_USE_THORVG_INTERNAL      0
+LV_USE_LOTTIE               0
 
-# =========================
-# ASSERTS
-# =========================
+# =========================================================
+# ASSERTS (OFF – AVOID MACRO BREAKAGE)
+# =========================================================
 
-LV_ASSERT_HANDLER_INCLUDE <assert.h>
-LV_USE_ASSERT 0
+LV_USE_ASSERT               0
+LV_ASSERT_HANDLER_INCLUDE   <assert.h>
 
-# =========================
+# =========================================================
 # STDLIB
-# =========================
+# =========================================================
 
-LV_USE_STDLIB_MALLOC    LV_STDLIB_CLIB
-LV_USE_STDLIB_STRING    LV_STDLIB_CLIB
-LV_USE_STDLIB_SPRINTF   LV_STDLIB_CLIB
+LV_USE_STDLIB_MALLOC        LV_STDLIB_CLIB
+LV_USE_STDLIB_STRING        LV_STDLIB_CLIB
+LV_USE_STDLIB_SPRINTF       LV_STDLIB_CLIB
