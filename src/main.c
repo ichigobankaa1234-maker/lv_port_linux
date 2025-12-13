@@ -1,11 +1,10 @@
 /*******************************************************************
  *
  * main.c - LVGL simulator for GNU/Linux
+ * Background + visible speed label (LVGL 9)
  *
- * DEMO REMOVED
- * Background-only render restored
- *
- ******************************************************************/
+ *******************************************************************/
+
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,10 +23,28 @@ extern const lv_image_dsc_t img_bg;
 /* Simulator settings */
 extern simulator_settings_t settings;
 
-static char *selected_backend;
+static char *selected_backend = NULL;
 
-/* ------------------------------------------------------------ */
+/* ============================================================
+ * SPEED TIMER CALLBACK  (LVGL 9 – CORRECT)
+ * ============================================================ */
+static void speed_timer_cb(lv_timer_t *timer)
+{
+    lv_obj_t *label = lv_timer_get_user_data(timer);
 
+    static int speed = 0;
+    static char buf[8];
+
+    snprintf(buf, sizeof(buf), "%d", speed);
+    lv_label_set_text(label, buf);
+
+    speed++;
+    if (speed > 180) speed = 0;
+}
+
+/* ============================================================
+ * SIMULATOR CONFIG
+ * ============================================================ */
 static void configure_simulator(int argc, char **argv)
 {
     int opt;
@@ -38,14 +55,14 @@ static void configure_simulator(int argc, char **argv)
     settings.window_width  = 800;
     settings.window_height = 480;
 
-    while ((opt = getopt(argc, argv, "b:W:H:BVh")) != -1) {
+    while ((opt = getopt(argc, argv, "b:W:H:Bh")) != -1) {
         switch (opt) {
         case 'B':
             driver_backends_print_supported();
             exit(EXIT_SUCCESS);
         case 'b':
             if (!driver_backends_is_supported(optarg)) {
-                die("error no such backend: %s\n", optarg);
+                die("error: no such backend: %s\n", optarg);
             }
             selected_backend = strdup(optarg);
             break;
@@ -61,14 +78,17 @@ static void configure_simulator(int argc, char **argv)
     }
 }
 
-/* ------------------------------------------------------------ */
-
+/* ============================================================
+ * MAIN
+ * ============================================================ */
 int main(int argc, char **argv)
 {
     configure_simulator(argc, argv);
 
+    /* Init LVGL */
     lv_init();
 
+    /* Init display backend */
     if (driver_backends_init_backend(selected_backend) == -1) {
         die("Failed to initialize display backend");
     }
@@ -77,13 +97,37 @@ int main(int argc, char **argv)
     driver_backends_init_backend("EVDEV");
 #endif
 
-    /* Background only */
+    /* --------------------------------------------------------
+     * BACKGROUND
+     * -------------------------------------------------------- */
     lv_obj_t *bg = lv_image_create(lv_screen_active());
     lv_image_set_src(bg, &img_bg);
     lv_obj_set_pos(bg, 0, 0);
+    lv_obj_move_background(bg);
 
-    /* Let backend own the loop */
+/* --------------------------------------------------------
+ * Speed label (layout test)
+ * -------------------------------------------------------- */
+lv_obj_t *speed_label = lv_label_create(lv_screen_active());
+lv_label_set_text(speed_label, "123");
+
+/* White text */
+lv_obj_set_style_text_color(speed_label, lv_color_white(), 0);
+
+/* Known-good font */
+lv_obj_set_style_text_font(speed_label, &lv_font_montserrat_32, 0);
+
+/* Absolute positioning (TUNE THESE VALUES) */
+lv_obj_set_pos(speed_label, 380, 225);
+
+/* Ensure it renders above the background */
+lv_obj_move_foreground(speed_label);
+
+    /* --------------------------------------------------------
+     * HAND CONTROL TO BACKEND LOOP
+     * -------------------------------------------------------- */
     driver_backends_run_loop();
 
     return 0;
 }
+
