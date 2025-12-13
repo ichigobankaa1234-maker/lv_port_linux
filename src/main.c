@@ -19,6 +19,7 @@
 
 /* External assets */
 extern const lv_image_dsc_t img_bg;
+extern const lv_font_t font_speed_32;
 
 /* Simulator settings */
 extern simulator_settings_t settings;
@@ -112,13 +113,13 @@ lv_obj_t *speed_label = lv_label_create(lv_screen_active());
 lv_label_set_text(speed_label, "123");
 
 /* White text */
-lv_obj_set_style_text_color(speed_label, lv_color_white(), 0);
+lv_obj_set_style_text_color(speed_label, lv_color_make(255, 150, 0), 0);
 
 /* Known-good font */
-lv_obj_set_style_text_font(speed_label, &lv_font_montserrat_32, 0);
+lv_obj_set_style_text_font(speed_label, &font_speed_32, 0);
 
 /* Absolute positioning (TUNE THESE VALUES) */
-lv_obj_set_pos(speed_label, 380, 225);
+lv_obj_set_pos(speed_label, 340, 215);
 
 /* Ensure it renders above the background */
 lv_obj_move_foreground(speed_label);

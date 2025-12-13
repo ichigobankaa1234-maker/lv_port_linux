@@ -367,6 +367,8 @@ target_link_libraries(lvgl PUBLIC ${PKG_CONFIG_LIB} m pthread)
 add_executable(lvglsim
     src/main.c
     src/assets/bg.c
+    src/assets/font_speed_32.c
+
 )
 
 # Repeat lvgl_linux to resolve circular dependency with lvgl
